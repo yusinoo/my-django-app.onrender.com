@@ -1,12 +1,8 @@
 {% extends "learning_logs/base.html" %}
-
-{% block title %}Home{% endblock title %}
-
 {% block content %}
-<div class="jumbotron">
-  <h1 class="display-4">Welcome to Learning Log!</h1>
-  <p class="lead">A web app to track your learning topics.</p>
-  <hr class="my-4">
-  <a class="btn btn-primary btn-lg" href="{% url 'learning_logs:topics' %}" role="button">View Topics</a>
+<div class="jumbotron text-center mt-4">
+    <h1 class="display-4">Welcome to Learning Log!</h1>
+    <p class="lead">A web app to track your learning topics.</p>
+    <a href="{% url 'learning_logs:topics' %}" class="btn btn-primary btn-lg">View Topics</a>
 </div>
 {% endblock content %}
